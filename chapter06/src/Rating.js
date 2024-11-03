@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
-import { IoIosStar, IoIosStarOutline } from 'react-icons/io';
+import React, { useState } from 'react'
+import { IoIosStar, IoIosStarOutline } from 'react-icons/io'
 
 const Rating = (props) => {
-    //keeping track of state (rating)
-    const [rating, setRating] = useState(props.rating);
-
+    //keeping track of state(rating)
+    const [rating, setRating] = useState(props.rating)
     return (
-        <div style={styles.starStyle}>
+        <div style={styles.startStyle}>
             {/* <h1>Rating: {rating}</h1> */}
             {rating >= 1 ? (
                 <IoIosStar onClick={() => setRating(1)} />
@@ -37,10 +36,11 @@ const Rating = (props) => {
     );
 }
 
-export default Rating;
 
-const styles = {
-    starStyle: {
-        color: 'orange'
-    }
-};
+const styles={ 
+starStyle:{ 
+color: 'orange'     
+} 
+}
+
+export default Rating;
