@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+//context: allows us to share value of any component
+//component tree that asks for those values
+//made avalble to all components
+export const UserContext = React.createContext();
+const username = "Vhukhudo";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <UserContext.Provider value={username}>
     <App />
+    </UserContext.Provider>
   </React.StrictMode>
 );
 

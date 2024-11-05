@@ -1,5 +1,6 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { UserContext } from "./index";
+
 // import Products from "./Products";
 // import JumbotronComponent from "./JumbotronComponent";
 import UserForm from "./UserForm";
